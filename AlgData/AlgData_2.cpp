@@ -164,7 +164,7 @@ void sorting(std::string sort_type, int* arr, int  n) {
 }
 
 
-int main(int argc, char* argv[]) {
+int proj_2_main(int argc, char* argv[]) {
 	std::string sort_type = std::string(argv[1]);
 	int n = argc - 2; // do not count executable name or first argument
 	int* arr = new int[n];
@@ -231,4 +231,5 @@ int main(int argc, char* argv[]) {
 	sorting(sort_type, test_c, test_c_size);
 
 	delete[] arr;
+	return 0;
 }
